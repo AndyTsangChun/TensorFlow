@@ -1,5 +1,4 @@
 # TensorFlow
-A CNN network example on MNIST dataset, along with TensorBoard
 
 In order to run the notebook locally, the following dependencies must be installed:
 <ul>
