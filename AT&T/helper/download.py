@@ -23,7 +23,6 @@ def _get_abs_name(name):
 def maybe_download_and_extract(data_url, data_path):
     filename = data_url.split('/')[-1]
     abs_filename = _get_abs_name(filename)
-    print abs_filename
     file_path = os.path.join(data_path, filename)
     # Check the extraction directory exists, if not make one
     if not os.path.exists(data_path):
