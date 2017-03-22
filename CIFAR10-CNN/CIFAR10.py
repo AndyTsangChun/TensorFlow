@@ -53,7 +53,7 @@ def one_hot_encoded(class_numbers, num_classes=None):
 #Input:
 #   filename: String
 #Return:
-#   None
+#   data: raw data 
 def _get_data(filename):
   file_path = os.path.join(DATA_PATH, DATA_CIFAR_10_PATH, filename)
   with open(file_path, mode='rb') as file:
@@ -62,7 +62,6 @@ def _get_data(filename):
     data = pickle.load(file)
 
   return data
-
 
 # Convert the raw images from the data-files to floating-points.
 #Input:
